@@ -15,44 +15,46 @@ import { OuterLinksDirective } from './directives/outer-links.directive';
 import { FontBoldDirective } from './directives/font-bold.directive';
 import { MouseOverDirective } from './directives/mouse-over.directive';
 import { SpinnerDirective } from './directives/spinner.directive';
+import { TextReducerPipe } from './pipes/pipe';
 
 
 
 const routes: Routes = [
-  {
-    path: '',
-    component: MainComponent
-  },
-  {
-    path: ':any',
-    component: MainComponent
-  }
+	{
+		path: '',
+		component: MainComponent
+	},
+	{
+		path: ':any',
+		component: MainComponent
+	}
 ]
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    CommonModule,
-    RouterModule.forRoot(routes),
-    // Material Modules
-    AppMaterialModules,
+	imports: [
+		BrowserModule,
+		BrowserAnimationsModule,
+		FormsModule,
+		ReactiveFormsModule,
+		HttpClientModule,
+		CommonModule,
+		RouterModule.forRoot(routes),
+		// Material Modules
+		AppMaterialModules,
 
-  ],
-  declarations: [
-    AppComponent, 
-    HeaderComponent, 
-    MainComponent,
-    InnerLinksDirective,
-    OuterLinksDirective,
-    FontBoldDirective,
-    MouseOverDirective,
-    SpinnerDirective
-  ],
-  bootstrap: [AppComponent]
+	],
+	declarations: [
+		AppComponent,
+		HeaderComponent,
+		MainComponent,
+		InnerLinksDirective,
+		OuterLinksDirective,
+		FontBoldDirective,
+		MouseOverDirective,
+		SpinnerDirective,
+		TextReducerPipe
+	],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
 

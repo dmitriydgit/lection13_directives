@@ -3,6 +3,7 @@ import { Directive, HostBinding, ElementRef, Renderer2, HostListener, Input } fr
 @Directive({
 	selector: 'img'
 })
+
 export class SpinnerDirective {
 	link: string;
 	spinner: string = 'https://cdn-images-1.medium.com/max/800/1*9EBHIOzhE1XfMYoKz1JcsQ.gif';
